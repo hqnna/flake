@@ -1,16 +1,17 @@
 { config, lib, pkgs, ... }:
 
 {
-  users.users.root = {
-    home = "/root";
+  users.users.hanna = {
     shell = pkgs.fish;
+    isNormalUser = true;
+    home = "/home/hanna";
     extraGroups = [ "wheel" ];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEST6MgqRSn0N9ResAQ6Alt0V02GJF3XWneEDeheuQVI"
     ];
   };
 
-  home-manager.users.root = {
+  home-manager.users.hanna = {
     imports = [
       ./fastfetch.nix
       ./starship.nix
@@ -22,8 +23,8 @@
       ./xdg.nix
     ];
 
-    home.username = "root";
-    home.homeDirectory = "/root";
+    home.username = "hanna";
+    home.homeDirectory = "/home/hanna";
     home.stateVersion = "24.11";
   };
 }
