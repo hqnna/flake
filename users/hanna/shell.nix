@@ -39,7 +39,7 @@
       # Environment Variables
       PODMAN_IGNORE_CGROUPSV1_WARNING = "1";
       COLORTERM = "truecolor";
-      EDITOR = "hx";
+      EDITOR = "kak";
     };
 
     history = {

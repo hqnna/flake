@@ -14,8 +14,8 @@
       ./starship.nix
       ./nixpkgs.nix
       ./hyfetch.nix
+      ./kakoune.nix
       ./direnv.nix
-      ./helix.nix
       ./shell.nix
       ./btop.nix
       ./git.nix

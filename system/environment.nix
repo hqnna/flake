@@ -13,7 +13,7 @@
     localBinInPath = true;
     memoryAllocator.provider = "scudo";
     defaultPackages = with pkgs; [
-      helix
+      kakoune
       wget
     ];
   };
