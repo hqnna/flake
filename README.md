@@ -11,9 +11,10 @@ My flake is setup in an organized file structure to keep things understandable.
 
 - **Shared** → Contains shared user and service config files.
 - **Secrets** → Contains encrypted secrets used across my machines.
-- **System** → Contains configuration files relating to the nixos system.
-- **Services** → Contains configuration files relating to system services.
-- **Users** → Contains user-specific configuration files and directories.
+- **Hosts** → Contains per-host configuration files and other stuff.
+  - **System** → Contains configuration files relating to the nixos system.
+  - **Services** → Contains configuration files relating to system services.
+  - **Users** → Contains user-specific configuration files and directories.
 
 Below you can see an ASCII file tree of how my flake is organized at a glance,
 and all files in it.
