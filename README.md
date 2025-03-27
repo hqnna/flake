@@ -3,81 +3,22 @@ Flake
 ![activity](https://img.shields.io/gitea/last-commit/hanna/flake?gitea_url=https%3A%2F%2Fcodeberg.org&style=flat-square)
 ================================================================================
 
-This repository contains the [NixOS](https://nixos.org) flake for my machines.
+My flake is setup with an organized structure to keep things easy to maintain.
 
-## Directory and File Structure
+- **Secrets** → Secrets encrypted with [agenix](https://github.com/ryantm/agenix),
+that are sometimes used across multiple hosts.
+- **Shared** → Components like configs or services that are being used across 
+multiple hosts.
+- **Hosts** → Individual configurations for each one of my machines, split into
+separate folders.
+  - **System** → Configs for machine specific things such as hardware, bootloader, etc.
+  - **Services** → Configs for services, things like podman, openssh, ollama, and more.
+  - **Users** → Configs for user-specific things and home-manager configuration stuff.
 
-My flake is setup in an organized file structure to keep things understandable.
+As for what each host is, a rough description of all of my machines can be seen below.
 
-- **Shared** → Contains shared user and service config files.
-- **Secrets** → Contains encrypted secrets used across my machines.
-- **Hosts** → Contains per-host configuration files and other stuff.
-  - **System** → Contains configuration files relating to the nixos system.
-  - **Services** → Contains configuration files relating to system services.
-  - **Users** → Contains user-specific configuration files and directories.
+- **Amethyst** → My desktop WSL2 install of NixOS, that I mainly use for development.
+- **Crystal** → My [Hetzner](https://hetzner.com) ARM server that I primarily use
+for testing and hosting stuff.
 
-Below you can see an ASCII file tree of how my flake is organized at a glance,
-and all files in it.
-
-```
-flake
-├── flake.nix
-├── flake.lock
-├── secrets/
-│   ├── secrets.nix
-│   └── wireguard.age
-├── shared/
-│   ├── services/
-│   │   ├── podman.nix
-│   │   └── default.nix
-│   └── configs/
-│       ├── btop.nix
-│       ├── default.nix
-│       ├── fastfetch.nix
-│       ├── starship.nix
-│       ├── hyfetch.nix
-│       ├── helix.nix
-│       ├── lsd.nix
-│       └── xdg.nix
-└── hosts/
-    ├── amethyst/
-    │   ├── system/
-    │   │   ├── environment.nix
-    │   │   ├── locale.nix
-    │   │   ├── networking.nix
-    │   │   ├── security.nix
-    │   │   ├── settings.nix
-    │   │   └── wsl.nix
-    │   ├── users/
-    │   │   └── hanna/
-    │   │       ├── overlays/
-    │   │       │   └── cloudflared.nix
-    │   │       ├── default.nix
-    │   │       ├── direnv.nix
-    │   │       ├── git.nix
-    │   │       ├── jj.nix
-    │   │       ├── nixpkgs.nix
-    │   │       ├── npm.nix
-    │   │       ├── shell.nix
-    │   │       └── ssh.nix
-    │   └── config.nix
-    └── crystal/
-        ├── system/
-        │   ├── boot.nix
-        │   ├── environment.nix
-        │   ├── hardware.nix
-        │   ├── locale.nix
-        │   ├── motd.nix
-        │   ├── networking.nix
-        │   ├── security.nix
-        │   └── settings.nix
-        ├── services/
-        │   ├── wireguard.nix
-        │   ├── openssh.nix
-        │   └── zram.nix
-        ├── users/
-        │   └── root/
-        │       ├── default.nix
-        │       └── shell.nix
-        └── config.nix
-```
+This is a very rough overview, and I recommend actually browing the files.
