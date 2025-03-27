@@ -36,7 +36,7 @@ flake
 │       ├── fastfetch.nix
 │       ├── starship.nix
 │       ├── hyfetch.nix
-│       ├── kakoune.nix
+│       ├── helix.nix
 │       ├── lsd.nix
 │       └── xdg.nix
 └── hosts/
