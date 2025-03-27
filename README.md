@@ -9,6 +9,7 @@ This repository contains the [NixOS](https://nixos.org) flake for my machines.
 
 My flake is setup in an organized file structure to keep things understandable.
 
+- **Secrets** → Contains encrypted secrets used across my machines.
 - **System** → Contains configuration files relating to the nixos system.
 - **Services** → Contains configuration files relating to system services.
 - **Users** → Contains user-specific configuration files and directories.
