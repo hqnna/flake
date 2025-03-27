@@ -8,6 +8,9 @@
     fish.vendor.config.enable = true;
   };
 
+  # Useful for root password resets
+  services.qemuAgent.enable = true;
+
   environment = {
     localBinInPath = true;
     memoryAllocator.provider = "graphene-hardened-light";
