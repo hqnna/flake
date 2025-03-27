@@ -17,8 +17,8 @@
 
     settings = {
       GatewayPorts = "yes";
+      PermitRootLogin = "no";
       KbdInteractiveAuthentication = false;
-      PermitRootLogin = "prohibit-password";
       PasswordAuthentication = false;
       LogLevel = "ERROR";
       UseDns = true;
