@@ -19,6 +19,7 @@
 
       directory = {
         format = "[](fg:#26233a)[󰉋 $path](bg:#26233a fg:#ebbcba)[](fg:#26233a)";
+        truncate_to_repo = false;
       };
 
       git_branch = {
