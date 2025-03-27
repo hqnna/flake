@@ -18,35 +18,49 @@ and all files in it.
 
 ```
 hosts/
-└── amethyst/
+├── amethyst/
+│   ├── system/
+│   │   ├── environment.nix
+│   │   ├── locale.nix
+│   │   ├── networking.nix
+│   │   ├── security.nix
+│   │   ├── settings.nix
+│   │   ├── users.nix
+│   │   └── wsl.nix
+│   ├── services/
+│   │   └── podman.nix
+│   ├── users/
+│   │   └── hanna/
+│   │       ├── overlays/
+│   │       │   └── cloudflared.nix
+│   │       ├── btop.nix
+│   │       ├── default.nix
+│   │       ├── direnv.nix
+│   │       ├── fastfetch.nix
+│   │       ├── git.nix
+│   │       ├── hyfetch.nix
+│   │       ├── jj.nix
+│   │       ├── kakoune.nix
+│   │       ├── lsd.nix
+│   │       ├── nixpkgs.nix
+│   │       ├── npm.nix
+│   │       ├── shell.nix
+│   │       ├── starship.nix
+│   │       └── xdg.nix
+│   └── config.nix
+└── crystal/
     ├── system/
+    │   ├── boot.nix
     │   ├── environment.nix
+    │   ├── hardware.nix
     │   ├── locale.nix
     │   ├── networking.nix
     │   ├── security.nix
-    │   ├── settings.nix
-    │   ├── users.nix
-    │   └── wsl.nix
+    │   └── settings.nix
     ├── services/
-    │   └── podman.nix
-    ├── users/
-    │   └── hanna/
-    │       ├── overlays/
-    │       │   └── cloudflared.nix
-    │       ├── btop.nix
-    │       ├── default.nix
-    │       ├── direnv.nix
-    │       ├── fastfetch.nix
-    │       ├── git.nix
-    │       ├── hyfetch.nix
-    │       ├── jj.nix
-    │       ├── kakoune.nix
-    │       ├── lsd.nix
-    │       ├── nixpkgs.nix
-    │       ├── npm.nix
-    │       ├── shell.nix
-    │       ├── starship.nix
-    │       └── xdg.nix
+    │   ├── openssh.nix
+    │   ├── podman.nix
+    │   └── zram.nix
     └── config.nix
 flake.lock
 flake.nix
