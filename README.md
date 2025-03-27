@@ -1,6 +1,6 @@
 Flake
-![license](https://img.shields.io/badge/license-0BSD-blue?style=flat-square)
-![activity](https://img.shields.io/gitea/last-commit/hanna/flake?gitea_url=https%3A%2F%2Fcodeberg.org&style=flat-square)
+![license](https://img.shields.io/badge/license-0BSD-blue)
+![activity](https://img.shields.io/gitea/last-commit/hanna/flake?gitea_url=https%3A%2F%2Fcodeberg.org)
 ================================================================================
 
 My flake is setup with an organized structure to keep things easy to maintain.
