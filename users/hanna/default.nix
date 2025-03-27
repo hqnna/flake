@@ -8,10 +8,11 @@
     shell = pkgs.zsh;
   };
 
-  home-manager.users.hanna = {
+  home-manager.users.hanna = { pkgs, ... }: {
     imports = [
       ./fastfetch.nix
       ./starship.nix
+      ./nixpkgs.nix
       ./hyfetch.nix
       ./direnv.nix
       ./helix.nix
@@ -28,6 +29,7 @@
     home.homeDirectory = "/home/hanna";
     home.stateVersion = "24.11";
     home.packages = with pkgs; [
+      cloudflared
       podman
       git
       age
