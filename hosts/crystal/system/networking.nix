@@ -20,19 +20,15 @@
     };
 
     interfaces.eth0 = {
-      ipv4.addresses = [
-        {
-          address="138.199.168.180";
-          prefixLength=32;
-        }
-      ];
+      ipv4.addresses = [{
+        address = "138.199.168.180";
+        prefixLength = 32;
+      }];
 
-      ipv4.routes = [
-        {
-          address = "172.31.1.1";
-          prefixLength = 32;
-        }
-      ];
+      ipv4.routes = [{
+        address = "172.31.1.1";
+        prefixLength = 32;
+      }];
     };
   };
 }
