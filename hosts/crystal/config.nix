@@ -5,6 +5,8 @@
     ./system/networking.nix
     ./services/openssh.nix
     ./system/hardware.nix
+    ./system/settings.nix
+    ./system/locale.nix
     ./system/boot.nix
   ];
 
