@@ -1,62 +1,34 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.zsh = {
+  programs.fish = {
     enable = true;
-
-    completionInit = ''
-      autoload -U compinit
-      mkdir -p ${config.xdg.stateHome}/zsh
-      compinit -d ${config.xdg.stateHome}/zsh/completion
-    '';
-
-    dirHashes = {
-      win = "/mnt/c/Users/Hanna";
-    };
 
     shellAliases = {
       cat = "${pkgs.bat}/bin/bat";
     };
 
-    sessionVariables = {
-      # XDG Standard Directories
-      XDG_DATA_HOME = config.xdg.dataHome;
-      XDG_STATE_HOME = config.xdg.stateHome;
-      XDG_CONFIG_HOME = config.xdg.configHome;
-      XDG_CACHE_HOME = config.xdg.cacheHome;
+    shellInit = ''
+    	set -U windows /mnt/c/Users/Hanna
+    
+    	set -Ux XDG_DATA_HOME ${config.xdg.dataHome}
+    	set -Ux XDG_STATE_HOME ${config.xdg.stateHome}
+    	set -Ux XDG_CONFIG_HOME ${config.xdg.configHome}
+    	set -Ux XDG_CACHE_HOME ${config.xdg.cacheHome}
 
-      # Software Directory Paths
-      NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc";
-      NODE_REPL_HISTORY = "${config.xdg.stateHome}/node_history";
-      SQLITE_HISTORY = "${config.xdg.stateHome}/sqlite_history";
-      OLLAMA_MODELS = "${config.xdg.dataHome}/ollama/models";
-      LESSHISTFILE = "${config.xdg.stateHome}/less_history";
-      CUDA_CACHE_PATH = "${config.xdg.cacheHome}/cuda";
-      GNUPGHOME = "${config.xdg.dataHome}/gnupg";
-      GOPATH = "${config.xdg.dataHome}/golang";
-      HEX_HOME = "${config.xdg.dataHome}/hex";
-      MIX_HOME = "${config.xdg.dataHome}/mix";
+    	set -Ux NPM_CONFIG_USERCONFIG ${config.xdg.configHome}/npm/npmrc
+    	set -Ux NODE_REPL_HISTORY ${config.xdg.stateHome}/node_history
+    	set -Ux SQLITE_HISTORY ${config.xdg.stateHome}/sqlite_history
+    	set -Ux LESSHISTFILE ${config.xdg.stateHome}/less_history
+    	set -Ux CUDA_CACHE_PATH ${config.xdg.cacheHome}/cuda
+    	set -Ux GNUPGHOME ${config.xdg.dataHome}/gnupg
+    	set -Ux GOPATH ${config.xdg.dataHome}/golang
+    	set -Ux HEX_HOME ${config.xdg.dataHome}/hex
+    	set -Ux MIX_HOME ${config.xdg.dataHome}/mix
 
-      # Environment Variables
-      PODMAN_IGNORE_CGROUPSV1_WARNING = "1";
-      COLORTERM = "truecolor";
-      EDITOR = "kak";
-    };
-
-    history = {
-      path = "${config.xdg.stateHome}/zsh/history";
-      share = true; 
-      size = 10000;
-      save = 1000;
-    };
-
-    antidote = {
-      enable = true;
-
-      plugins = [
-        "zdharma-continuum/fast-syntax-highlighting"
-        "zsh-users/zsh-autosuggestions"
-      ];
-    };
+    	set -Ux PODMAN_IGNORE_CGROUPSV1_WARNING 1
+    	set -Ux COLORTERM truecolor
+    	set -Ux EDITOR kak
+    '';
   };
 }

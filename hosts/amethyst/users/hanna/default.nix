@@ -5,7 +5,7 @@
     home = "/home/hanna";
     extraGroups = [ "wheel" ];
     isNormalUser = true;
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   home-manager.users.hanna = { pkgs, ... }: {
