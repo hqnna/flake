@@ -10,18 +10,12 @@
 
   home-manager.users.hanna = { pkgs, ... }: {
     imports = [
-      ./fastfetch.nix
-      ./starship.nix
+      ../../../common/configs
       ./nixpkgs.nix
-      ./hyfetch.nix
-      ./kakoune.nix
       ./direnv.nix
       ./shell.nix
-      ./btop.nix
       ./git.nix
-      ./lsd.nix
       ./npm.nix
-      ./xdg.nix
       ./ssh.nix
       ./jj.nix
     ];

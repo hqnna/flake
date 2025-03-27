@@ -13,14 +13,8 @@
 
   home-manager.users.hanna = {
     imports = [
-      ./fastfetch.nix
-      ./starship.nix
-      ./hyfetch.nix
-      ./kakoune.nix
+      ../../../common/configs
       ./shell.nix
-      ./btop.nix
-      ./lsd.nix
-      ./xdg.nix
     ];
 
     home.username = "hanna";

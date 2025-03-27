@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../common/services
     ./system/environment.nix
     ./services/wireguard.nix
     ./system/networking.nix
@@ -9,7 +10,6 @@
     ./system/hardware.nix
     ./system/settings.nix
     ./system/security.nix
-    ./services/podman.nix
     ./services/zram.nix
     ./system/locale.nix
     ./system/users.nix
