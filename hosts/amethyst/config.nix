@@ -1,4 +1,4 @@
-{ common, config, lib, pkgs, ... }:
+{ shared, config, lib, pkgs, ... }:
 
 {
   imports = [
@@ -9,7 +9,7 @@
     ./system/locale.nix
     ./system/users.nix
     ./system/wsl.nix
-    common.services
+    shared.services
   ];
 
   home-manager.useGlobalPkgs = false;

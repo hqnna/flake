@@ -24,7 +24,7 @@ flake
 ├── flake.lock
 ├── secrets/
 │   └── wireguard.age
-├── common/
+├── shared/
 │   ├── services/
 │   │   ├── podman.nix
 │   │   └── default.nix

@@ -1,4 +1,4 @@
-{ common, config, lib, pkgs, ... }:
+{ shared, config, lib, pkgs, ... }:
 
 {
   imports = [
@@ -14,7 +14,7 @@
     ./system/users.nix
     ./system/boot.nix
     ./system/motd.nix
-    common.services
+    shared.services
   ];
 
   home-manager.useGlobalPkgs = true;

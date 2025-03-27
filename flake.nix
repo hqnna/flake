@@ -17,9 +17,9 @@
       specialArgs = {
         inherit inputs;
 
-        common = {
-          configs = ./common/configs;
-          services = ./common/services;
+        shared = {
+          configs = ./shared/configs;
+          services = ./shared/services;
         };
       };
 
@@ -36,9 +36,9 @@
       specialArgs = {
         inherit inputs;
 
-        common = {
-          configs = ./common/configs;
-          services = ./common/services;
+        shared = {
+          configs = ./shared/configs;
+          services = ./shared/services;
         };
       };
 
