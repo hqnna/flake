@@ -3,6 +3,7 @@
 {
   imports = [
     ./system/environment.nix
+    ./services/wireguard.nix
     ./system/networking.nix
     ./services/openssh.nix
     ./system/hardware.nix
