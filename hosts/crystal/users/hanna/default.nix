@@ -11,9 +11,9 @@
     ];
   };
 
-  home-manager.users.hanna = {
+  home-manager.users.hanna = { common, pkgs, ... }: {
     imports = [
-      ../../../common/configs
+      common.configs
       ./shell.nix
     ];
 

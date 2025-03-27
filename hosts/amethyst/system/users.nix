@@ -1,4 +1,4 @@
-{ inputs, config, lib, pkgs, ... }:
+{ inputs, common, config, lib, pkgs, ... }:
 
 {
   imports = [
@@ -7,5 +7,6 @@
 
   home-manager.extraSpecialArgs = {
     inherit inputs;
+    inherit common;
   };
 }

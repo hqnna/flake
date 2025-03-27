@@ -1,8 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ common, config, lib, pkgs, ... }:
 
 {
   imports = [
-    ../common/services
     ./system/environment.nix
     ./services/wireguard.nix
     ./system/networking.nix
@@ -15,6 +14,7 @@
     ./system/users.nix
     ./system/boot.nix
     ./system/motd.nix
+    common.services
   ];
 
   home-manager.useGlobalPkgs = true;

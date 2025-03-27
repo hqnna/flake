@@ -8,9 +8,9 @@
     shell = pkgs.fish;
   };
 
-  home-manager.users.hanna = { pkgs, ... }: {
+  home-manager.users.hanna = { common, pkgs, ... }: {
     imports = [
-      ../../../common/configs
+      common.configs
       ./nixpkgs.nix
       ./direnv.nix
       ./shell.nix

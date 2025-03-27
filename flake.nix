@@ -12,8 +12,16 @@
 
   outputs = { self, nixpkgs, wsl, hm, age }@inputs: {
     nixosConfigurations.amethyst = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
+
+      specialArgs = {
+        inherit inputs;
+
+        common = {
+          configs = ./hosts/common/configs;
+          services = ./hosts/common/services;
+        };
+      };
 
       modules = [
         ./hosts/amethyst/config.nix
@@ -23,8 +31,16 @@
     };
 
     nixosConfigurations.crystal = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
       system = "aarch64-linux";
+
+      specialArgs = {
+        inherit inputs;
+
+        common = {
+          configs = ./hosts/common/configs;
+          services = ./hosts/common/services;
+        };
+      };
 
       modules = [
         ./hosts/crystal/config.nix
