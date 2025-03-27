@@ -2,30 +2,37 @@
 
 {
   networking = {
-    nameservers = [ "8.8.8.8"
- ];
-    defaultGateway = "172.31.1.1";
-    defaultGateway6 = {
-      address = "";
-      interface = "eth0";
-    };
+    enableIPv6 = false;
+    hostId = "f0f1e70c";
+    hostName = "crystal";
     dhcpcd.enable = false;
+    defaultGateway = "172.31.1.1";
+    nameservers = [ "1.1.1.1" "1.0.0.1" ];
+    timeServers = [ "time.cloudflare.com" ];
     usePredictableInterfaceNames = lib.mkForce false;
-    interfaces = {
-      eth0 = {
-        ipv4.addresses = [
-          { address="138.199.168.180"; prefixLength=32; }
-        ];
-        ipv6.addresses = [
-          { address="fe80::9400:4ff:fe27:550c"; prefixLength=64; }
-        ];
-        ipv4.routes = [ { address = "172.31.1.1"; prefixLength = 32; } ];
-        ipv6.routes = [ { address = ""; prefixLength = 128; } ];
+
+    firewall = {
+      enable = true;
+      allowPing = false;
+      interfaces.eth0 = {
+        allowedTCPPorts = [ 22 ];
       };
-      
+    };
+
+    interfaces.eth0 = {
+      ipv4.addresses = [
+        {
+          address="138.199.168.180";
+          prefixLength=32;
+        }
+      ];
+
+      ipv4.routes = [
+        {
+          address = "172.31.1.1";
+          prefixLength = 32;
+        }
+      ];
     };
   };
-  services.udev.extraRules = ''
-    ATTR{address}=="96:00:04:27:55:0c", NAME="eth0"
-  '';
 }
