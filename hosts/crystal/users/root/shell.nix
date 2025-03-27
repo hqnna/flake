@@ -5,7 +5,7 @@
     enable = true;
 
     shellInit = ''
-    	set --erase fish_greeting
+    	set -U fish_greeting
 
     	set -Ux XDG_DATA_HOME ${config.xdg.dataHome}
     	set -Ux XDG_STATE_HOME ${config.xdg.stateHome}
