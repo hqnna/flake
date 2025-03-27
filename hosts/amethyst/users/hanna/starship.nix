@@ -10,10 +10,14 @@
       command_timeout = 3600;
       add_newline = false;
 
-      format = "$nix_shell$directory$git_branch\${custom.jj} ";
+      format = "$nix_shell$hostname$directory$git_branch\${custom.jj} ";
 
       nix_shell = {
         format = "[](fg:#26233a)[󰜗 $state](bg:#26233a fg:#9ccfd8)[](fg:#26233a) ";
+      };
+
+      hostname = {
+        format = "[](fg:#26233a)[ $hostname](bg:#26233a fg:#eb6f92)[](fg:#26233a) ";
       };
 
       directory = {
