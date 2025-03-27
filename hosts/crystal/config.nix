@@ -1,7 +1,8 @@
-{ shared, config, lib, pkgs, ... }:
+{ inputs, shared, config, lib, pkgs, ... }:
 
 {
   imports = [
+    ./users/hanna/default.nix
     ./system/environment.nix
     ./services/wireguard.nix
     ./system/networking.nix
@@ -11,13 +12,16 @@
     ./system/security.nix
     ./services/zram.nix
     ./system/locale.nix
-    ./system/users.nix
     ./system/boot.nix
     ./system/motd.nix
     shared.services
   ];
 
+  system.stateVersion = "24.11";
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
-  system.stateVersion = "24.11";
+  home-manager.extraSpecialArgs = {
+    inherit inputs;
+    inherit shared;
+  };
 }
