@@ -22,6 +22,7 @@
       ./lsd.nix
       ./npm.nix
       ./xdg.nix
+      ./ssh.nix
       ./jj.nix
     ];
 
