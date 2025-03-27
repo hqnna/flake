@@ -8,6 +8,7 @@
     ./system/hardware.nix
     ./system/settings.nix
     ./system/security.nix
+    ./services/zram.nix
     ./system/locale.nix
     ./system/boot.nix
   ];
