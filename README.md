@@ -71,7 +71,7 @@ hosts/
     │   ├── podman.nix
     │   └── zram.nix
     ├── users/
-    │   └── root/
+    │   └── hanna/
     │       ├── btop.nix
     │       ├── default.nix
     │       ├── fastfetch.nix
