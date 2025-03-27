@@ -2,12 +2,9 @@
 
 {
   boot = {
-    crashDump.enable = true;
-    crashDump.reservedMemory = "1G";
+    kernelPackages = pkgs.linuxPackages_latest;
     readOnlyNixStore = true;
     tmp.cleanOnBoot = true;
-
-    kernelPackages = pkgs.linuxPackages_latest;
 
     kernel.sysctl = {
       "net.ipv4.ip_forward" = true;
