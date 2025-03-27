@@ -8,6 +8,13 @@
       cat = "${pkgs.bat}/bin/bat";
     };
 
+    functions = {
+      hx.body = ''
+        ${pkgs.helix}/bin/hx $argv[1]
+        printf '\033[5 q'
+      '';
+    };
+
     shellInit = ''
     	set -U fish_greeting
     	set -U windows /mnt/c/Users/Hanna

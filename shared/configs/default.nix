@@ -5,8 +5,8 @@
   	./btop.nix
   	./fastfetch.nix
   	./hyfetch.nix
-  	./kakoune.nix
   	./starship.nix
+  	./helix.nix
   	./lsd.nix
   	./xdg.nix
 	];

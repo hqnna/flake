@@ -4,6 +4,17 @@
   programs.fish = {
     enable = true;
 
+    shellAliases = {
+      cat = "${pkgs.bat}/bin/bat";
+    };
+
+    functions = {
+      hx.body = ''
+        ${pkgs.helix}/bin/hx $argv[1]
+        printf '\033[5 q'
+      '';
+    };
+
     shellInit = ''
     	set -U fish_greeting
 
@@ -17,9 +28,5 @@
     	set -Ux COLORTERM truecolor
     	set -Ux EDITOR kak
     '';
-
-    shellAliases = {
-      cat = "${pkgs.bat}/bin/bat";
-    };
   };
 }
