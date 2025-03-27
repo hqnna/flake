@@ -48,7 +48,6 @@ flake
     │   │   ├── networking.nix
     │   │   ├── security.nix
     │   │   ├── settings.nix
-    │   │   ├── users.nix
     │   │   └── wsl.nix
     │   ├── users/
     │   │   └── hanna/
@@ -72,8 +71,7 @@ flake
         │   ├── motd.nix
         │   ├── networking.nix
         │   ├── security.nix
-        │   ├── settings.nix
-        │   └── users.nix
+        │   └── settings.nix
         ├── services/
         │   ├── wireguard.nix
         │   ├── openssh.nix
