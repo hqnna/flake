@@ -28,6 +28,7 @@
 
       modules = [
         ./hosts/crystal/config.nix
+        age.nixosModules.default
         hm.nixosModules.default
       ];
     };
