@@ -45,6 +45,7 @@ hosts/
 │   │       ├── nixpkgs.nix
 │   │       ├── npm.nix
 │   │       ├── shell.nix
+│   │       ├── ssh.nix
 │   │       ├── starship.nix
 │   │       └── xdg.nix
 │   └── config.nix
