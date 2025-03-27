@@ -6,8 +6,8 @@
 
     lfs.enable = true;
     userName = "hanna";
-    userEmail = "hanna@hanna.lol";
-    signing.key = "F47491837959F4D2";
+    userEmail = "me@hanna.lol";
+    signing.key = "B38FD4F31BB1BCC8";
     signing.signByDefault = true;
 
     aliases = {

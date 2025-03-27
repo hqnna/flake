@@ -7,11 +7,11 @@
     settings = {
       user = {
         name = "hanna";
-        email = "hanna@hanna.lol";
+        email = "me@hanna.lol";
       };
 
       signing = {
-        key = "F47491837959F4D2";
+        key = "B38FD4F31BB1BCC8";
         sign-all = true;
         backend = "gpg";
       };
