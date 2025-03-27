@@ -16,6 +16,7 @@
       allowPing = false;
       interfaces.eth0 = {
         allowedTCPPorts = [ 22 ];
+        allowedUDPPorts = [ 51820 ];
       };
     };
 
