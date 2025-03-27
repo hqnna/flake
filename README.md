@@ -4,3 +4,45 @@ Flake
 ================================================================================
 
 This repository contains the [NixOS](https://nixos.org) flake for my wsl setup.
+
+## Directory and File Structure
+
+My flake is setup in an organized file structure to keep things understandable.
+
+- **System** → Contains configuration files relating to the nixos system.
+- **Services** → Contains configuration files relating to system services.
+- **Users** → Contains user-specific configuration files and directories.
+
+Below you can see an ASCII file tree of how my flake is organized at a glance,
+and all files in it.
+
+```
+system/
+├─ environment.nix
+├─ locale.nix
+├─ networking.nix
+├─ security.nix
+├─ settings.nix
+├─ users.nix
+├─ wsl.nix
+services/
+├─ podman.nix
+users/
+├─ hanna/
+│  ├─ btop.nix
+│  ├─ default.nix
+│  ├─ direnv.nix
+│  ├─ fastfetch.nix
+│  ├─ git.nix
+│  ├─ helix.nix
+│  ├─ hyfetch.nix
+│  ├─ jj.nix
+│  ├─ lsd.nix
+│  ├─ npm.nix
+│  ├─ shell.nix
+│  ├─ starship.nix
+│  ├─ xdg.nix
+configuration.nix
+flake.lock
+flake.nix
+```
