@@ -2,12 +2,20 @@
 
 {
   security = {
-    doas.enable = true;
     sudo.enable = false;
     lockKernelModules = true;
     protectKernelImage = true;
     unprivilegedUsernsClone = true;
     virtualisation.flushL1DataCache = "always";
+
+    doas = {
+      enable = true;
+      extraRules = [{
+        groups = [ "wheel" ];
+        keepEnv = true;
+        persist = true;
+      }];
+    };
   };
 
   age.secrets = {
