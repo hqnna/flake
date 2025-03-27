@@ -7,6 +7,7 @@
   	./hyfetch.nix
   	./starship.nix
   	./helix.nix
+		./bat.nix
   	./lsd.nix
   	./xdg.nix
 	];
