@@ -13,6 +13,7 @@
     ./system/locale.nix
     ./system/users.nix
     ./system/boot.nix
+    ./system/motd.nix
   ];
 
   home-manager.useGlobalPkgs = true;
