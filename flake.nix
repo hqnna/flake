@@ -13,9 +13,9 @@
       system = "x86_64-linux";
 
       modules = [
+        ./hosts/amethyst/configuration.nix
+        wsl.nixosModules.default 
         hm.nixosModules.default
-        wsl.nixosModules.default
-        ./configuration.nix
       ];
     };
   };
