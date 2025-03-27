@@ -13,10 +13,8 @@
     localBinInPath = true;
     memoryAllocator.provider = "scudo";
     defaultPackages = with pkgs; [
-      unzip
       helix
       wget
-      zip
     ];
   };
 }
