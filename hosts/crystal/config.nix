@@ -11,10 +11,10 @@
     ./system/security.nix
     ./services/zram.nix
     ./system/locale.nix
-    ./system/users.nix
     ./system/boot.nix
     ./system/motd.nix
     shared.services
+    shared.system
   ];
 
   home-manager.useGlobalPkgs = true;

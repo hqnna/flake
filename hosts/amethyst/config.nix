@@ -7,9 +7,9 @@
     ./system/settings.nix
     ./system/security.nix
     ./system/locale.nix
-    ./system/users.nix
     ./system/wsl.nix
     shared.services
+    shared.system
   ];
 
   home-manager.useGlobalPkgs = false;
