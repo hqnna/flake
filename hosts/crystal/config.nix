@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./system/environment.nix
     ./system/networking.nix
     ./services/openssh.nix
     ./system/hardware.nix
