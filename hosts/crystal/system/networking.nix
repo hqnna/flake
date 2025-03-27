@@ -14,10 +14,8 @@
     firewall = {
       enable = true;
       allowPing = false;
-      interfaces.eth0 = {
-        allowedTCPPorts = [ 22 ];
-        allowedUDPPorts = [ 51820 ];
-      };
+      interfaces.eth0.allowedUDPPorts = [ 51820 ];
+      interfaces.crystal.allowedTCPPorts = [ 22 ];
     };
 
     interfaces.eth0 = {

@@ -6,6 +6,11 @@
     allowSFTP = true;
     authorizedKeysInHomedir = false;
 
+    listenAddresses = [{
+      addr = "10.0.0.1";
+      port = 22;
+    }];
+
     extraConfig = ''
       PrintLastLog no
     '';
