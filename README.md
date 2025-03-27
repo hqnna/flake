@@ -61,6 +61,7 @@ hosts/
     │   ├── settings.nix
     │   └── users.nix
     ├── services/
+    │   ├── wireguard.nix
     │   ├── openssh.nix
     │   ├── podman.nix
     │   └── zram.nix
@@ -76,6 +77,8 @@ hosts/
     │       ├── starship.nix
     │       └── xdg.nix
     └── config.nix
+secrets/
+└── wireguard.age
 flake.lock
 flake.nix
 ```
