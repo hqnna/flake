@@ -18,5 +18,14 @@
         hm.nixosModules.default
       ];
     };
+
+    nixosConfigurations.crystal = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      system = "aarch64-linux";
+
+      modules = [
+        ./hosts/crystal/config.nix
+      ];
+    };
   };
 }
