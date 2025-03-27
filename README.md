@@ -20,5 +20,5 @@ separate folders.
 ## Host Descriptions
 
 - **Amethyst** → My desktop WSL2 install of NixOS, that I mainly use for development.
-- **Crystal** → My [Hetzner](https://hetzner.com) ARM server that I primarily use
-for testing and hosting stuff.
+- **Crystal** → My [Hetzner](https://hetzner.com) VPS, that is primarily used for testing 
+and hosting stuff.
