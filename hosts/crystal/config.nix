@@ -3,6 +3,7 @@
 {
   imports = [
     ./system/networking.nix
+    ./services/openssh.nix
     ./system/hardware.nix
     ./system/boot.nix
   ];
