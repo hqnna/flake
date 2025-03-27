@@ -9,7 +9,7 @@
   };
 
   # Useful for root password resets
-  services.qemuAgent.enable = true;
+  services.qemuGuest.enable = true;
 
   environment = {
     localBinInPath = true;
