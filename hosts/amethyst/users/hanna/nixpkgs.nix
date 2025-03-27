@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   nixpkgs.config = {
@@ -7,6 +7,7 @@
   };
 
   nixpkgs.overlays = [
+    (f: p: { agenix = inputs.age.packages.${pkgs.system}.default; })
     (import ./overlays/cloudflared.nix)
   ];
 }

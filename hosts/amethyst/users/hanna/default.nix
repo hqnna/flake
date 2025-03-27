@@ -32,6 +32,7 @@
     home.packages = with pkgs; [
       cloudflared
       podman
+      agenix
       age
     ];
   };
