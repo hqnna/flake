@@ -18,8 +18,8 @@
         inherit inputs;
 
         common = {
-          configs = ./hosts/common/configs;
-          services = ./hosts/common/services;
+          configs = ./common/configs;
+          services = ./common/services;
         };
       };
 
@@ -37,8 +37,8 @@
         inherit inputs;
 
         common = {
-          configs = ./hosts/common/configs;
-          services = ./hosts/common/services;
+          configs = ./common/configs;
+          services = ./common/services;
         };
       };
 
