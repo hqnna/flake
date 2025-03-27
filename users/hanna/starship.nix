@@ -14,7 +14,6 @@
 
       nix_shell = {
         format = "[](fg:#26233a)[󰜗 $state](bg:#26233a fg:#9ccfd8)[](fg:#26233a) ";
-        heuristic = true;
       };
 
       directory = {
