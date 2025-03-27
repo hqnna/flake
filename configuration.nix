@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -11,6 +11,12 @@
     ./system/users.nix
     ./system/wsl.nix
   ];
+
+  home-manager.extraSpecialArgs = {
+    upkgs = import inputs.unstable {
+      system = pkgs.system;
+    };
+  };
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
