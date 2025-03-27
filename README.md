@@ -23,6 +23,7 @@ flake
 ├── flake.nix
 ├── flake.lock
 ├── secrets/
+│   ├── secrets.nix
 │   └── wireguard.age
 ├── shared/
 │   ├── services/
