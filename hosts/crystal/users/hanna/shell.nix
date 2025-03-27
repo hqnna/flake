@@ -26,7 +26,7 @@
     	set -Ux LESSHISTFILE ${config.xdg.stateHome}/less_history
     	set -Ux PODMAN_IGNORE_CGROUPSV1_WARNING 1
     	set -Ux COLORTERM truecolor
-    	set -Ux EDITOR kak
+    	set -Ux EDITOR hx
     '';
   };
 }

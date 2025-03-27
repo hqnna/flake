@@ -20,7 +20,7 @@
         conflict-marker-style = "snapshot";
         default-command = [ "status" ];
         diff.format = "git";
-        editor = "kak";
+        editor = "hx";
       };
 
       templates.log_node = ''

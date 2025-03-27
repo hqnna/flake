@@ -33,7 +33,7 @@
       rerere.enabled = true;
       submodule.recurse = true;
       core.autocrlf = false;
-      core.editor = "kak";
+      core.editor = "hx";
       fetch.prune = true;
       lfs.locksverify = false;
     };
