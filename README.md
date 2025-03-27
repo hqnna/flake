@@ -9,10 +9,9 @@ This repository contains the [NixOS](https://nixos.org) flake for my machines.
 
 My flake is setup in an organized file structure to keep things understandable.
 
-- **Hosts** → Contains folders for each host / machine that I use.
-  - **System** → Contains configuration files relating to the nixos system.
-  - **Services** → Contains configuration files relating to system services.
-  - **Users** → Contains user-specific configuration files and directories.
+- **System** → Contains configuration files relating to the nixos system.
+- **Services** → Contains configuration files relating to system services.
+- **Users** → Contains user-specific configuration files and directories.
 
 Below you can see an ASCII file tree of how my flake is organized at a glance,
 and all files in it.
