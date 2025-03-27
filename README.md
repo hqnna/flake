@@ -17,35 +17,37 @@ Below you can see an ASCII file tree of how my flake is organized at a glance,
 and all files in it.
 
 ```
-system/
-├─ environment.nix
-├─ locale.nix
-├─ networking.nix
-├─ security.nix
-├─ settings.nix
-├─ users.nix
-├─ wsl.nix
-services/
-├─ podman.nix
-users/
-├─ hanna/
-│  ├─ overlays/
-│  │  ├─ cloudflared.nix
-│  ├─ btop.nix
-│  ├─ default.nix
-│  ├─ direnv.nix
-│  ├─ fastfetch.nix
-│  ├─ git.nix
-│  ├─ hyfetch.nix
-│  ├─ jj.nix
-│  ├─ kakoune.nix
-│  ├─ lsd.nix
-│  ├─ nixpkgs.nix
-│  ├─ npm.nix
-│  ├─ shell.nix
-│  ├─ starship.nix
-│  ├─ xdg.nix
-configuration.nix
+hosts/
+└── amethyst/
+    ├── system/
+    │   ├── environment.nix
+    │   ├── locale.nix
+    │   ├── networking.nix
+    │   ├── security.nix
+    │   ├── settings.nix
+    │   ├── users.nix
+    │   └── wsl.nix
+    ├── services/
+    │   └── podman.nix
+    ├── users/
+    │   └── hanna/
+    │       ├── overlays/
+    │       │   └── cloudflared.nix
+    │       ├── btop.nix
+    │       ├── default.nix
+    │       ├── direnv.nix
+    │       ├── fastfetch.nix
+    │       ├── git.nix
+    │       ├── hyfetch.nix
+    │       ├── jj.nix
+    │       ├── kakoune.nix
+    │       ├── lsd.nix
+    │       ├── nixpkgs.nix
+    │       ├── npm.nix
+    │       ├── shell.nix
+    │       ├── starship.nix
+    │       └── xdg.nix
+    └── config.nix
 flake.lock
 flake.nix
 ```
