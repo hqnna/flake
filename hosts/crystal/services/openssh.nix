@@ -6,7 +6,7 @@
     allowSFTP = true;
     authorizedKeysInHomedir = false;
 
-    extraConfig =	''
+    extraConfig = ''
       PrintLastLog no
     '';
 
