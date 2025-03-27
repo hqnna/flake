@@ -54,13 +54,26 @@ hosts/
     │   ├── environment.nix
     │   ├── hardware.nix
     │   ├── locale.nix
+    │   ├── motd.nix
     │   ├── networking.nix
     │   ├── security.nix
-    │   └── settings.nix
+    │   ├── settings.nix
+    │   └── users.nix
     ├── services/
     │   ├── openssh.nix
     │   ├── podman.nix
     │   └── zram.nix
+    ├── users/
+    │   └── root/
+    │       ├── btop.nix
+    │       ├── default.nix
+    │       ├── fastfetch.nix
+    │       ├── hyfetch.nix
+    │       ├── kakoune.nix
+    │       ├── lsd.nix
+    │       ├── shell.nix
+    │       ├── starship.nix
+    │       └── xdg.nix
     └── config.nix
 flake.lock
 flake.nix
