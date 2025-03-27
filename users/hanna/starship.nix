@@ -6,27 +6,27 @@
     enableZshIntegration = true;
 
     settings = {
-      format = "$nix_shell[](#2a2a2a)$directory[](fg:#2a2a2a bg:#4a4a4a)$git_branch[](fg:#4a4a4a bg:#6a6a6a)\${custom.jj}[](#6a6a6a) ";
+      format = "$nix_shell[](234)$directory[](fg:234 bg:238)$git_branch[](fg:238 bg:242)\${custom.jj}[](242) ";
       
       scan_timeout = 60;
       command_timeout = 3600;
       add_newline = false;
 
       nix_shell = {
-        format = "[](#2a2a2a)[ shell](fg:#FFFFFF bg:#2a2a2a)[](#2a2a2a) ";
+        format = "[](234)[ shell](fg:255 bg:234)[](234) ";
       };
 
       directory = {
         truncate_to_repo = false;
-        format = "[󰉋 $path ](bg:#2a2a2a fg:#FFFFFF)";
+        format = "[󰉋 $path ](bg:234 fg:255)";
       };
 
       git_branch = {
-        format = "[ 󰘬 $branch ](bg:#4a4a4a fg:#FFFFFF)";
+        format = "[ 󰘬 $branch ](bg:238 fg:255)";
       };
 
       custom.jj = {
-        format = "[ 󰅐 $output ](bg:#6a6a6a fg:#FFFFFF)";
+        format = "[ 󰅐 $output ](bg:242 fg:255)";
         command = "jj log -r@ -n1 --ignore-working-copy --no-graph --color never -T 'change_id.short(7)'";
         when = "jj root";
       };
