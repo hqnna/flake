@@ -29,6 +29,8 @@ services/
 ├─ podman.nix
 users/
 ├─ hanna/
+│  ├─ overlays/
+│  │  ├─ cloudflared.nix
 │  ├─ btop.nix
 │  ├─ default.nix
 │  ├─ direnv.nix
@@ -38,6 +40,7 @@ users/
 │  ├─ hyfetch.nix
 │  ├─ jj.nix
 │  ├─ lsd.nix
+│  ├─ nixpkgs.nix
 │  ├─ npm.nix
 │  ├─ shell.nix
 │  ├─ starship.nix
