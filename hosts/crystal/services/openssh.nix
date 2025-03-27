@@ -6,6 +6,10 @@
     allowSFTP = true;
     authorizedKeysInHomedir = false;
 
+    extraConfig =	''
+      PrintLastLog no
+    '';
+
     settings = {
       GatewayPorts = "yes";
       KbdInteractiveAuthentication = false;
