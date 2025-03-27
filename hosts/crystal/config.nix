@@ -18,7 +18,7 @@
   ];
 
   system.stateVersion = "24.11";
-  home-manager.useGlobalPkgs = true;
+  home-manager.useGlobalPkgs = false;
   home-manager.useUserPackages = true;
   home-manager.extraSpecialArgs = {
     inherit inputs;
