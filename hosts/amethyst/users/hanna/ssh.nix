@@ -7,7 +7,7 @@
     matchBlocks = {
       crystal = {
         identityFile = [ "~/.ssh/id_ed25519" ];
-        hostname = "138.199.168.180";
+        hostname = "10.0.0.1";
         user = "root";
         port = 22;
       };
