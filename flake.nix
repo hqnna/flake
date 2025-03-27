@@ -20,7 +20,6 @@
         shared = {
           configs = ./shared/configs;
           services = ./shared/services;
-          system = ./shared/system;
         };
       };
 

@@ -25,9 +25,6 @@ flake
 ├── secrets/
 │   └── wireguard.age
 ├── shared/
-│   ├── system/
-│   │   ├── users.nix
-│   │   └── default.nix
 │   ├── services/
 │   │   ├── podman.nix
 │   │   └── default.nix
@@ -48,6 +45,7 @@ flake
     │   │   ├── networking.nix
     │   │   ├── security.nix
     │   │   ├── settings.nix
+    │   │   ├── users.nix
     │   │   └── wsl.nix
     │   ├── users/
     │   │   └── hanna/
@@ -71,7 +69,8 @@ flake
         │   ├── motd.nix
         │   ├── networking.nix
         │   ├── security.nix
-        │   └── settings.nix
+        │   ├── settings.nix
+        │   └── users.nix
         ├── services/
         │   ├── wireguard.nix
         │   ├── openssh.nix
