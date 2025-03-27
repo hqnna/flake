@@ -12,9 +12,6 @@
   environment = {
     localBinInPath = true;
     memoryAllocator.provider = "scudo";
-    defaultPackages = with pkgs; [
-      kakoune
-      wget
-    ];
+    defaultPackages = with pkgs; [ wget ];
   };
 }

@@ -31,7 +31,6 @@
     home.packages = with pkgs; [
       cloudflared
       podman
-      git
       age
     ];
   };
