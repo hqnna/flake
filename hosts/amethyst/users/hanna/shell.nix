@@ -9,6 +9,7 @@
     };
 
     shellInit = ''
+    	set --erase fish_greeting
     	set -U windows /mnt/c/Users/Hanna
     
     	set -Ux XDG_DATA_HOME ${config.xdg.dataHome}
