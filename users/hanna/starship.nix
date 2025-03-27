@@ -13,7 +13,7 @@
       add_newline = false;
 
       nix_shell = {
-        format = "[](#2a2a2a)[󱄅 shell](fg:#FFFFFF bg:#2a2a2a)[](#2a2a2a) ";
+        format = "[](#2a2a2a)[ shell](fg:#FFFFFF bg:#2a2a2a)[](#2a2a2a) ";
       };
 
       directory = {
