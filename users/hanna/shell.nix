@@ -31,6 +31,7 @@
       SQLITE_HISTORY = "${config.xdg.stateHome}/sqlite_history";
       OLLAMA_MODELS = "${config.xdg.dataHome}/ollama/models";
       LESSHISTFILE = "${config.xdg.stateHome}/less_history";
+      DOTNET_CLI_HOME = "${config.xdg.dataHome}/dotnet";
       CUDA_CACHE_PATH = "${config.xdg.cacheHome}/cuda";
       GNUPGHOME = "${config.xdg.dataHome}/gnupg";
       GOPATH = "${config.xdg.dataHome}/golang";
