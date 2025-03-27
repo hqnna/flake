@@ -11,8 +11,7 @@
 
       peers = [{
         publicKey = "5mDRrican38tKePrdarYo3O08TVP+tSXmZvr6H20wGw=";
-        allowedIPs = [ "10.0.0.0/16" ];
-        name = "amethyst";
+        allowedIPs = [ "10.0.0.2/32" ];
       }];
     };
   };
