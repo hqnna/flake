@@ -25,6 +25,7 @@
 
       modules = [
         ./hosts/crystal/config.nix
+        hm.nixosModules.default
       ];
     };
   };

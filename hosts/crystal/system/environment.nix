@@ -8,8 +8,6 @@
     fish.vendor.config.enable = true;
   };
 
-  users.defaultUserShell = pkgs.fish;
-
   environment = {
     localBinInPath = true;
     memoryAllocator.provider = "graphene-hardened-light";
