@@ -2,17 +2,10 @@
 
 {
   security = {
+    doas.enable = true;
     tpm2.enable = true;
     sudo.enable = false;
     chromiumSuidSandbox.enable = true;
-
-    doas = {
-      enable = true;
-      extraRules = [{
-        groups = [ "wheel" ];
-        keepEnv = true;
-        noPass = true;
-      }];
-    };
+    doas.extraRules = [{ groups = [ "wheel" ]; noPass = true; }];
   };
 }
