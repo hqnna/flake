@@ -7,7 +7,7 @@
     authorizedKeysInHomedir = false;
 
     settings = {
-      GatewayPorts = true;
+      GatewayPorts = "yes";
       KbdInteractiveAuthentication = false;
       PermitRootLogin = "prohibit-password";
       PasswordAuthentication = false;
