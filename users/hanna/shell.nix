@@ -35,6 +35,8 @@
       CUDA_CACHE_PATH = "${config.xdg.cacheHome}/cuda";
       GNUPGHOME = "${config.xdg.dataHome}/gnupg";
       GOPATH = "${config.xdg.dataHome}/golang";
+      HEX_HOME = "${config.xdg.dataHome}/hex";
+      MIX_HOME = "${config.xdg.dataHome}/mix";
 
       # Environment Variables
       PODMAN_IGNORE_CGROUPSV1_WARNING = "1";
