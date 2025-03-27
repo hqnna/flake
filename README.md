@@ -36,9 +36,9 @@ users/
 │  ├─ direnv.nix
 │  ├─ fastfetch.nix
 │  ├─ git.nix
-│  ├─ helix.nix
 │  ├─ hyfetch.nix
 │  ├─ jj.nix
+│  ├─ kakoune.nix
 │  ├─ lsd.nix
 │  ├─ nixpkgs.nix
 │  ├─ npm.nix
