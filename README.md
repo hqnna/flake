@@ -18,6 +18,10 @@ Below you can see an ASCII file tree of how my flake is organized at a glance,
 and all files in it.
 
 ```
+flake.nix
+flake.lock
+secrets/
+└── wireguard.age
 hosts/
 ├── amethyst/
 │   ├── system/
@@ -78,8 +82,4 @@ hosts/
     │       ├── starship.nix
     │       └── xdg.nix
     └── config.nix
-secrets/
-└── wireguard.age
-flake.lock
-flake.nix
 ```
