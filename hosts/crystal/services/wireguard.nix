@@ -10,7 +10,7 @@
       privateKeyFile = config.age.secrets.wireguard.path;
 
       peers = [{
-        publicKey = "5mDRrican38tKePrdarYo3O08TVP+tSXmZvr6H20wGw=";
+        publicKey = "JEyJdie/pcWpA26CfyQwq6y5e15aXMp/V5oj72tQPjQ=";
         allowedIPs = [ "10.0.0.2/32" ];
       }];
     };

@@ -6,6 +6,7 @@
     hostId = "f0f1e70c";
     hostName = "crystal";
     dhcpcd.enable = false;
+    defaultGateway6 = "fe80::1";
     defaultGateway = "172.31.1.1";
     nameservers = [ "1.1.1.1" "1.0.0.1" ];
     timeServers = [ "time.cloudflare.com" ];
@@ -24,9 +25,19 @@
         prefixLength = 32;
       }];
 
+      ipv6.addresses = [{
+        address="2a01:4ff:f0:e01d::1";
+        prefixLength=64;
+      }];
+
       ipv4.routes = [{
         address = "172.31.1.1";
         prefixLength = 32;
+      }];
+
+      ipv6.routes = [{
+        address = "fe80::1";
+        prefixLength = 128;
       }];
     };
   };

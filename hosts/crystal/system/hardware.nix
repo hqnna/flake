@@ -8,12 +8,9 @@
   boot.loader.grub.device = "/dev/sda";
   boot.initrd.kernelModules = [ "nvme" ];
   boot.initrd.availableKernelModules = [
-    "ata_piix"
-    "uhci_hcd"
-    "xen_blkfront"
-    "vmw_pvscsi"
-  ];  
-  
+    "ata_piix" "uhci_hcd" "xen_blkfront" "vmw_pvscsi"
+  ];
+ 
   fileSystems."/" = {
     device = "/dev/sda1";
     fsType = "ext4";
