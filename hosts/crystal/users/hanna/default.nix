@@ -20,5 +20,8 @@
     home.username = "hanna";
     home.homeDirectory = "/home/hanna";
     home.stateVersion = "24.11";
+    home.packages = with pkgs; [
+      podman-compose
+    ];
   };
 }
