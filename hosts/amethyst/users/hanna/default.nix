@@ -3,9 +3,12 @@
 {
   users.users.hanna = {
     home = "/home/hanna";
-    extraGroups = [ "wheel" ];
     isNormalUser = true;
     shell = pkgs.fish;
+    extraGroups = [
+      "wheel"
+      "docker"
+    ];    
   };
 
   home-manager.users.hanna = { shared, pkgs, ... }: {
