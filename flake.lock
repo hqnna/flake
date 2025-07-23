@@ -46,11 +46,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1752850100,
-        "narHash": "sha256-mgmGxPfTMxxslKrskyOdwy2TW4A8i7o2c3zCDUrNyzc=",
+        "lastModified": 1753270786,
+        "narHash": "sha256-3E3eTUVNSkd55kncWa8sNcQOKtbK3hsxf25tzsaPfhc=",
         "ref": "main",
-        "rev": "429eaeff0d583c854be05f4802659b500ce1df30",
-        "revCount": 70,
+        "rev": "cb16ce7092a51f06199e9d046e5ed39e0d798026",
+        "revCount": 71,
         "type": "git",
         "url": "https://tangled.sh/@rockorager.dev/lsr"
       },
