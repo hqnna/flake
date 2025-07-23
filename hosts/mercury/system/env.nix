@@ -9,6 +9,7 @@
 
   programs = {
     gnupg.agent.enable = true;
+    nix-ld.enable = true;
     fish.enable = true;
   };
 }
