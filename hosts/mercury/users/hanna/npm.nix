@@ -8,6 +8,6 @@ lib.generators.toKeyValue {} {
   cache = "${home}/.cache/npm";
   init-module = "${home}/.config/npm/config/npm-init.js";
   state-dir = "${home}/.local/state/pnpm-state";
-  store-dir = "${home}./local/share/pnpm-store";
+  store-dir = "${home}/.local/share/pnpm-store";
   tmp = "${home}/.cache/npm";
 }
