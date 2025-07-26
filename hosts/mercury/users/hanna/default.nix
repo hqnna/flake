@@ -23,6 +23,7 @@
 
   hjem.users.hanna.files = {
     ".config/btop/btop.conf".text = import ./btop.nix args;
+    ".config/direnv/direnvrc".source = import ./direnvrc.nix args;
     ".config/direnv/direnv.toml".source = import ./direnv.nix args;
     ".config/fastfetch/config.jsonc".text = import ./fastfetch.nix;
     ".config/helix/config.toml".source = import ./helix.nix args;
