@@ -28,7 +28,7 @@
     ".config/fastfetch/config.jsonc".text = import ./fastfetch.nix;
     ".config/helix/config.toml".source = import ./helix.nix args;
     ".config/starship.toml".source = import ./starship.nix args;
-    ".config/fish/config.fish".text = import ./fish.nix args;
+    ".config/fish/config.fish".source = import ./fish.nix args;
     ".config/git/config".text = import ./git.nix args;
     ".config/npm/npmrc".text = import ./npm.nix args;
   };
