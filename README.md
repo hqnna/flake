@@ -30,6 +30,7 @@ flake
                 ├── btop.nix
                 ├── default.nix
                 ├── direnv.nix
+                ├── direnvrc.nix
                 ├── fastfetch.nix
                 ├── fish.nix
                 ├── git.nix
