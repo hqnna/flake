@@ -17,6 +17,7 @@
       fastfetch
       starship
       direnv
+      unzip
       btop
     ];
   };
