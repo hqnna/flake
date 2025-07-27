@@ -7,34 +7,35 @@ My personal [NixOS](https://nixos.org) flake for all of the machines I manage.
 
 ```
 flake
-├── flake.nix
+├── hosts
+│   └── mercury
+│       ├── services
+│       │   └── openssh.nix
+│       ├── system
+│       │   ├── docs.env
+│       │   ├── env.nix
+│       │   ├── fonts.nix
+│       │   ├── locale.nix
+│       │   ├── network.nix
+│       │   ├── security.nix
+│       │   ├── settings.nix
+│       │   ├── users.nix
+│       │   ├── virt.nix
+│       │   └── wsl.nix
+│       ├── users
+│       │   └── hanna
+│       │       ├── direnv/
+│       │       │   ├── config.nix
+│       │       │   └── rc.nix
+│       │       ├── btop.nix
+│       │       ├── default.nix
+│       │       ├── fastfetch.nix
+│       │       ├── fish.nix
+│       │       ├── git.nix
+│       │       ├── helix.nix
+│       │       ├── npm.nix
+│       │       └── starship.nix
+│       └── config.nix
 ├── flake.lock
-└── hosts
-    └── mercury
-        ├── config.nix
-        ├── services
-        │   └── openssh.nix
-        ├── system
-        │   ├── docs.env
-        │   ├── env.nix
-        │   ├── fonts.nix
-        │   ├── locale.nix
-        │   ├── network.nix
-        │   ├── security.nix
-        │   ├── settings.nix
-        │   ├── users.nix
-        │   ├── virt.nix
-        │   └── wsl.nix
-        └── users
-            └── hanna
-                ├── btop.nix
-                ├── default.nix
-                ├── direnv.nix
-                ├── direnvrc.nix
-                ├── fastfetch.nix
-                ├── fish.nix
-                ├── git.nix
-                ├── helix.nix
-                ├── npm.nix
-                └── starship.nix
+└── flake.nix
 ```
