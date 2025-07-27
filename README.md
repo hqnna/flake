@@ -24,9 +24,9 @@ flake
 │       │   └── wsl.nix
 │       ├── users
 │       │   └── hanna
-│       │       ├── direnv/
+│       │       ├── direnv
 │       │       │   ├── config.nix
-│       │       │   └── rc.nix
+│       │       │   └── cache.nix
 │       │       ├── btop.nix
 │       │       ├── default.nix
 │       │       ├── fastfetch.nix
