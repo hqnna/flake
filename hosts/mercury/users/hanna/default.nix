@@ -14,6 +14,7 @@
     ];
 
     packages = with pkgs; [
+      nur.repos.charmbracelet.crush
       fastfetch
       starship
       direnv
