@@ -34,8 +34,8 @@
     };
   };
 
-  nixpkgs.config = {
-    allowBroken = false;
-    allowUnfree = true;
+  nixpkgs = {
+    overlays = [ inputs.nur.overlays.default ];
+    config = { allowBroken = false; allowUnfree = true; };
   };
 }
