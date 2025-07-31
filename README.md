@@ -10,6 +10,7 @@ flake
 ├── hosts
 │   └── mercury
 │       ├── secrets
+│       │   ├── claude.age
 │       │   └── services.age
 │       ├── services
 │       │   ├── openssh.nix
