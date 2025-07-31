@@ -37,6 +37,7 @@ flake
 │       │       ├── git.nix
 │       │       ├── helix.nix
 │       │       ├── npm.nix
+│       │       ├── ssh.nix
 │       │       └── starship.nix
 │       └── config.nix
 ├── flake.lock
