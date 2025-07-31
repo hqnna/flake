@@ -23,6 +23,7 @@
   };
 
   hjem.users.hanna.files = {
+    ".ssh/config".source = import ./ssh.nix args;
     ".config/btop/btop.conf".text = import ./btop.nix args;
     ".config/direnv/direnvrc".source = import ./direnv/cache.nix args;
     ".config/direnv/direnv.toml".source = import ./direnv/config.nix args;
