@@ -16,4 +16,8 @@
       }];
     };
   };
+
+  age.secrets = {
+    services.file = ../secrets/services.age;
+  };
 }

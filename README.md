@@ -9,8 +9,11 @@ My personal [NixOS](https://nixos.org) flake for all of the machines I manage.
 flake
 ├── hosts
 │   └── mercury
+│       ├── secrets
+│       │   └── services.age
 │       ├── services
-│       │   └── openssh.nix
+│       │   ├── openssh.nix
+│       │   └── wireguard.nix
 │       ├── system
 │       │   ├── docs.env
 │       │   ├── env.nix

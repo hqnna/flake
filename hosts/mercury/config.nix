@@ -1,6 +1,7 @@
 {
   imports = [
     ./services/openssh.nix
+    ./services/wireguard.nix
     ./system/security.nix
     ./system/settings.nix
     ./system/network.nix
