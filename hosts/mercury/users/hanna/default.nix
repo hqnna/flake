@@ -13,8 +13,8 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEST6MgqRSn0N9ResAQ6Alt0V02GJF3XWneEDeheuQVI"
     ];
 
-    packages = with pkgs; [
-      nur.repos.charmbracelet.crush
+    packages = with pkgs; with nur; [
+      repos.charmbracelet.crush
       fastfetch
       starship
       direnv
