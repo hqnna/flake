@@ -8,8 +8,8 @@
     autoUpgrade = {
       enable = true;
       dates = "weekly";
-      channel = "https://nixos.org/channels/nixos-25.05-small";
-      operation = "boot";
+      operation = "switch";
+      flake = "https://codeberg.org/hanna/flake"
     };
   };
 
