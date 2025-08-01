@@ -13,10 +13,15 @@
     };
   };
 
-  hjem = {
-    specialArgs = { inherit inputs; };
-    clobberByDefault = true;
+  hardware = {
+    nvidia.open = false;
+    nvidia.nvidiaSettings = false;
+    nvidia.modesetting.enable = true;
+    nvidia-container-toolkit.enable = true;
+    nvidia-container-toolkit.mount-nvidia-executables = false;
   };
+
+  services.xserver.videoDrivers = ["nvidia"];
 
   nix = {
     gc.dates = "weekly";
@@ -37,5 +42,10 @@
   nixpkgs = {
     overlays = [ inputs.nur.overlays.default ];
     config = { allowBroken = false; allowUnfree = true; };
+  };
+
+  hjem = {
+    specialArgs = { inherit inputs; };
+    clobberByDefault = true;
   };
 }
