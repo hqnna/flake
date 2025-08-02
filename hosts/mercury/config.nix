@@ -6,6 +6,7 @@
     ./system/settings.nix
     ./system/network.nix
     ./system/locale.nix
+    ./system/nvidia.nix
     ./system/fonts.nix
     ./system/users.nix
     ./system/docs.nix

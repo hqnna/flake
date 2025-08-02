@@ -13,16 +13,6 @@
     };
   };
 
-  hardware = {
-    nvidia.open = false;
-    nvidia.nvidiaSettings = false;
-    nvidia.modesetting.enable = true;
-    nvidia-container-toolkit.enable = true;
-    nvidia-container-toolkit.mount-nvidia-executables = false;
-  };
-
-  services.xserver.videoDrivers = ["nvidia"];
-
   nix = {
     gc.dates = "weekly";
     gc.automatic = true;
