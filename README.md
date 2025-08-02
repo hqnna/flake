@@ -21,6 +21,7 @@ flake
 │       │   ├── fonts.nix
 │       │   ├── locale.nix
 │       │   ├── network.nix
+│       │   ├── nvidia.nix
 │       │   ├── security.nix
 │       │   ├── settings.nix
 │       │   ├── users.nix
