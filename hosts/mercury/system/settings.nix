@@ -9,7 +9,7 @@
       enable = true;
       dates = "weekly";
       operation = "switch";
-      flake = "https://codeberg.org/hanna/flake"
+      flake = "https://codeberg.org/hanna/flake";
     };
   };
 
