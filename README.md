@@ -24,24 +24,24 @@ flake
 │       │   ├── nvidia.nix
 │       │   ├── security.nix
 │       │   ├── settings.nix
-│       │   ├── users.nix
 │       │   ├── virt.nix
 │       │   └── wsl.nix
-│       ├── users
-│       │   └── hanna
-│       │       ├── direnv
-│       │       │   ├── config.nix
-│       │       │   └── cache.nix
-│       │       ├── btop.nix
-│       │       ├── default.nix
-│       │       ├── fastfetch.nix
-│       │       ├── fish.nix
-│       │       ├── git.nix
-│       │       ├── helix.nix
-│       │       ├── npm.nix
-│       │       ├── ssh.nix
-│       │       └── starship.nix
 │       └── config.nix
+├── users
+│   ├── hanna
+│   │   ├── direnv
+│   │   │   ├── cache.nix
+│   │   │   └── config.nix
+│   │   ├── btop.nix
+│   │   ├── default.nix
+│   │   ├── fastfetch.nix
+│   │   ├── fish.nix
+│   │   ├── git.nix
+│   │   ├── helix.nix
+│   │   ├── npm.nix
+│   │   ├── ssh.nix
+│   │   └── starship.nix
+│   └── default.nix
 ├── flake.lock
 └── flake.nix
 ```

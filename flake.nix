@@ -15,8 +15,14 @@
 
   outputs = { self, nixpkgs, hjem, wsl, lsr, age, nur }@inputs: {
     nixosConfigurations.mercury = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
+
+      specialArgs = {
+        inherit inputs;
+        users = import ./users {
+          lib = nixpkgs.lib;
+        };
+      };
 
       modules = [
         ./hosts/mercury/config.nix
