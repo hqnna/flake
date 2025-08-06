@@ -4,7 +4,7 @@
   environment = {
     localBinInPath = true;
     memoryAllocator.provider = "mimalloc";
-    defaultPackages = with pkgs; [ git wget helix ];
+    defaultPackages = with pkgs; [ git wget helix unzip ];
   };
 
   programs = {

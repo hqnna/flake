@@ -3,6 +3,7 @@
 let
   home = config.users.users.hanna.home;
   lsr = inputs.lsr.packages.${pkgs.system};
+  claude = config.age.secrets.claude;
 in
 pkgs.writeText "config.fish" ''
   set -U win /mnt/c/Users/Hanna
@@ -15,7 +16,7 @@ pkgs.writeText "config.fish" ''
   set -Ux XDG_CONFIG_HOME ${home}/.config
   set -Ux XDG_CACHE_HOME ${home}/.cache
 
-  set -Ux ANTHROPIC_API_KEY (cat ${config.age.secrets.claude.path})
+  set -Ux ANTHROPIC_API_KEY (cat ${claude.path or "/dev/null"})
   set -Ux NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
   set -Ux NODE_REPL_HISTORY $XDG_STATE_HOME/node_history
   set -Ux SQLITE_HISTORY $XDG_STATE_HOME/sqlite_history
