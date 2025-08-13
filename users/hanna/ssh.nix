@@ -15,7 +15,7 @@ in mkConfig [
   {
     name = "services";
     identity = "${config.users.users.hanna.home}/.ssh/id_ed25519";
-    hostname = "192.168.1.1";
+    hostname = "10.0.0.2";
     user = "root";
     port = "22";
   }
