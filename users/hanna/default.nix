@@ -31,6 +31,7 @@
   } // lib.optionalAttrs (config ? wsl) {
     ".config/direnv/direnv.toml".source = import ./direnv/config.nix args;
     ".config/direnv/direnvrc".source = import ./direnv/cache.nix args;
+    ".config/git/keys".source = import ./keys.nix args;
     ".config/git/config".text = import ./git.nix args;
     ".config/npm/npmrc".text = import ./npm.nix args;
     ".ssh/config".source = import ./ssh.nix args;
