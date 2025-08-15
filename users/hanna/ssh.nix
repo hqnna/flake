@@ -2,7 +2,7 @@
 
 let
   mkConfig = hosts:
-    pkgs.writeText "config" (lib.concatStringsSep "\n\n" (map (host: ''
+    pkgs.writeText "config" (lib.concatStringsSep "\n" (map (host: ''
       host ${host.name}
         hostname ${host.hostname}
         identityfile ${host.identity}
