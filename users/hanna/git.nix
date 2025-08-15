@@ -3,7 +3,7 @@
 let
   home = config.users.users.hanna.home;
 in
-lib.generators.toINI {} {
+lib.generators.toGitINI {
   init.defaultBranch = "main";
   push.default = "simple";
   pull.rebase = true;
