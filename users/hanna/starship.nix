@@ -4,22 +4,36 @@ let
   toml = pkgs.formats.toml {};
 in
 toml.generate "starship.toml" {
-  scan_timeout = 60;
   command_timeout = 3600;
   add_newline = false;
+  scan_timeout = 60;
 
-  format = "\${nix_shell}$directory$git_branch[λ](fg:8) ";
+  format = "$nix_shell$username$hostname$directory$git_branch\${custom.end}";
+
+  nix_shell = {
+    format = "[\\[](fg:8)[$state](fg:4)[\\[](fg:8)";
+  };
+
+  username = {
+    format = "[\\[](fg:8)[$user](fg:8)";
+    show_always = true;
+  };
+
+  hostname = {
+    format = "[@](fg:8)[$hostname](fg:5)";
+    ssh_only = false;
+  };
 
   directory = {
-    format = "[$path](fg:4) ";
+    format = "[:](fg:8)[$path](fg:3)";
     truncate_to_repo = false;
   };
 
   git_branch = {
-    format = "[$branch](fg:5) ";
+    format = "[@](fg:8)[$branch](fg:3)";
   };
 
-  nix_shell = {
-    format = "[\\(](fg:8)[shell](fg:4)[\\)](fg:8) ";
+  custom.end = {
+    format = "[\\]$](fg:8) ";
   };
 }
