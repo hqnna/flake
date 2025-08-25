@@ -15,11 +15,6 @@ lib.generators.toGitINI {
   commit.gpgsign = true;
   rerere.enabled = true;
 
-  gpg = {
-    format = "ssh";
-    ssh.allowedSignersFile = "${home}/.config/git/keys";
-  };
-
   core = {
     autocrlf = false;
     editor = "hx";
@@ -28,6 +23,6 @@ lib.generators.toGitINI {
   user = {
     name = "hanna";
     email = "me@hanna.lol";
-    signingkey = "${home}/.ssh/id_ed25519.pub";
+    signingkey = "E68958B151034FFB";
   };
 }
