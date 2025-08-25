@@ -1,6 +1,6 @@
 flake
-![license](https://badge.hanna.lol/license/0BSD)
-![activity](https://badge.hanna.lol/activity/flake)
+![license](https://img.shields.io/github/license/hqnna/flake?labelColor=334155&color=3b82f6)
+![activity](https://img.shields.io/github/last-commit/hqnna/flake?labelColor=334155&color=3b82f6)
 ================================================================================
 
 My personal [NixOS](https://nixos.org) flake for all systems I manage with nix.
