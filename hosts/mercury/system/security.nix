@@ -21,10 +21,5 @@
 
   age.secrets = {
     services.file = ../secrets/services.age;
-
-    claude = {
-      file = ../secrets/claude.age;
-      owner = config.users.users.hanna.name;
-    };
   };
 }

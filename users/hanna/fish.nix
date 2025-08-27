@@ -16,7 +16,6 @@ pkgs.writeText "config.fish" ''
     set -Ux XDG_CONFIG_HOME ${user.home}/.config
     set -Ux XDG_CACHE_HOME ${user.home}/.cache
 
-    set -Ux ANTHROPIC_API_KEY (cat ${config.age.secrets.claude.path})
     set -Ux NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
     set -Ux NODE_REPL_HISTORY $XDG_STATE_HOME/node_history
     set -Ux SQLITE_HISTORY $XDG_STATE_HOME/sqlite_history

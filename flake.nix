@@ -1,6 +1,5 @@
 {
   inputs = {
-    nur.url = "github:nix-community/NUR";
     hjem.url = "github:feel-co/hjem/main";
     age.url = "github:ryantm/agenix/main";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -10,10 +9,9 @@
     age.inputs.nixpkgs.follows = "nixpkgs";
     lsr.inputs.nixpkgs.follows = "nixpkgs";
     wsl.inputs.nixpkgs.follows = "nixpkgs";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, hjem, wsl, lsr, age, nur }@inputs: {
+  outputs = { self, nixpkgs, hjem, wsl, lsr, age }@inputs: {
     nixosConfigurations.mercury = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 

@@ -29,9 +29,9 @@
     };
   };
 
-  nixpkgs = {
-    overlays = [ inputs.nur.overlays.default ];
-    config = { allowBroken = false; allowUnfree = true; };
+  nixpkgs.config = {
+    allowBroken = false;
+    allowUnfree = true;
   };
 
   hjem = {
