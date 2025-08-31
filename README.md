@@ -1,6 +1,6 @@
 flake
-![license](https://img.shields.io/github/license/hqnna/flake?labelColor=555555&color=0088cc)
-![activity](https://img.shields.io/github/last-commit/hqnna/flake?labelColor=555555&color=0088cc)
+![license](https://img.shields.io/github/license/hqnna/flake?labelColor=4a414e&color=3373cc)
+![activity](https://img.shields.io/github/last-commit/hqnna/flake?label=activity&labelColor=4a414e&color=3373cc)
 ================================================================================
 
 My personal [NixOS](https://nixos.org) flake for all systems I manage with nix.
